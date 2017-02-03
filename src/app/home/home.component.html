@@ -1,0 +1,10 @@
+<div class="home-container">
+  <div class="sites-container">
+    <h3>Computer Science</h3>
+    <ul>
+      <li *ngFor="let site of sites">
+        <a href={{site.url}} target="_blank">{{site.author}}</a>
+      </li>
+    </ul>
+  </div>
+</div>

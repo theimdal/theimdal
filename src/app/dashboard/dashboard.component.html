@@ -1,0 +1,8 @@
+<h3>Sist innrapporterte installasjoner</h3>
+<div class="grid grid-pad">
+    <div *ngFor="#installation of installations" (click)="gotoDetail(installation)" class="col-1-4">
+        <div class="module installation">
+            <h4>{{installation.hc_party.name}}</h4>
+        </div>
+    </div>
+</div>
