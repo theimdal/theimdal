@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "clean": "rimraf ../dist",
+    "clean": "rimraf dist",
     "dev": "webpack-dev-server --inline --hot --profile --bail --progress --colors --port 3000",
     "test": "karma start",
-    "build": "rimraf ../dist && webpack --config config/webpack.prod.js --inline --hot --profile --bail --progress --colors"
+    "build": "rimraf dist && webpack --config config/webpack.prod.js --inline --hot --profile --bail --progress --colors"
   },
   "dependencies": {
     "@angular/common": "~2.4.0",
@@ -42,6 +42,7 @@
     "angular2-template-loader": "^0.4.0",
     "autoprefixer-loader": "^3.2.0",
     "awesome-typescript-loader": "^2.2.4",
+    "copy-webpack-plugin": "4.0.1",
     "css-loader": "^0.23.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
