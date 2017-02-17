@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule }   from '@angular/forms';
 import { HomeComponent } from './home.component';
 import { SiteService } from './site.service';
+import {SiteFormComponent} from "./site-form.component";
 
 @NgModule({
   imports: [
@@ -10,7 +11,8 @@ import { SiteService } from './site.service';
     BrowserModule
   ],
   declarations: [
-    HomeComponent
+    HomeComponent,
+    SiteFormComponent
   ],
   providers: [
     SiteService

@@ -33,7 +33,7 @@ module.exports = webpackMerge(commonConfig, {
         new webpack.DefinePlugin({
             'process.env': {
                 'ENV': JSON.stringify(ENV),
-                'INSTALLATION_SERVICE_HOST': JSON.stringify('https://vp-nhns02.dips.local/statisticsservice')
+                'THEIMDAL_API_HOST': JSON.stringify('http://theimdal-api.azurewebsites.net')
             }
         }),
         new CopyWebpackPlugin([

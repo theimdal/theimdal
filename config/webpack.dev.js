@@ -22,7 +22,7 @@ module.exports = webpackMerge(commonConfig, {
         new webpack.DefinePlugin({
             'process.env': {
                 'ENV': JSON.stringify(ENV),
-                'INSTALLATION_SERVICE_HOST': JSON.stringify('http://localhost:8081')
+                'THEIMDAL_API_HOST': JSON.stringify('http://localhost:8081')
             }
         }),
         new OpenBrowserPlugin({ url: 'http://localhost:3000/', browser: 'chrome' })

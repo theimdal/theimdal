@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import './rxjs-operators';
 
 import '../../public/styles.css';
+import '../../public/forms.css';
 
 @Component({
     selector: 'app',

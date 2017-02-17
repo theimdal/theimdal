@@ -16,6 +16,7 @@ import 'font-awesome/css/font-awesome.min.css';
 import 'primeui/primeui.min.css';
 import 'primeui/primeui-ng-all.min.css';
 import 'primeui/primeui-ng-all.min.css';
+import 'bootstrap/dist/css/bootstrap.css';
 
 import 'script!chart.js/dist/Chart.bundle.js';
 import 'script!underscore/underscore-min.js';

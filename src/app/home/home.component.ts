@@ -29,7 +29,9 @@ export class HomeComponent implements OnInit, AfterContentInit {
             error => this.errorMessage = <any>error);
       }
 
-    
+    onSitesChange() {
+        this.refreshSites();
+    }
 
     ngAfterContentInit() {
       // Do nothing yet
@@ -37,6 +39,10 @@ export class HomeComponent implements OnInit, AfterContentInit {
 
     onSelect(siteId: any) {
         // this.router.navigate(['/detail', installationId]);
+    }
+
+    onAdded(newSite: Site) {
+        this.sites.push(newSite);
     }
 
     // delete(installationId: any) {
